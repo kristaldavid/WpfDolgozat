@@ -42,14 +42,14 @@
                  Height="350"
                  Width="450"/>
 
-        <TextBox Grid.Row="2" Grid.Column="1" 
-                 Margin="10,0,10,120" 
+        <TextBox Grid.Row="1" 
+                 Margin="502,398,0,0" 
                  VerticalAlignment="Top"
                  HorizontalAlignment="Left"
-                 Height="50" 
-                 Width="450"
+                 Height="44" 
+                 Width="508"
                  TextWrapping="Wrap" 
-                 AcceptsReturn="True"/>
+                 AcceptsReturn="True" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
 
         <StackPanel Grid.Row="3" Grid.Column="1" 
                     Orientation="Horizontal"
@@ -69,13 +69,13 @@
         </StackPanel>
 
         <!-- Vertical TextBox -->
-        <TextBox Grid.Row="1" Grid.RowSpan="2" Grid.Column="0"
-                 Margin="10"
+        <TextBox Grid.Row="1" Grid.Column="0"
+                 Margin="0,168,402,0"
                  VerticalAlignment="Top"
-                 HorizontalAlignment="right"
-                 Width="80"
+                 HorizontalAlignment="Right"
+                 Width="382"
                  MaxLength="300"
-                 RenderTransformOrigin="0.5, 0.5">
+                 RenderTransformOrigin="0.5, 0.5" Grid.ColumnSpan="2" Height="36">
             <TextBox.RenderTransform>
                 <RotateTransform Angle="+90"/>
             </TextBox.RenderTransform>

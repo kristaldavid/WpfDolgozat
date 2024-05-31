@@ -1,12 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Microsoft.EntityFrameworkCore;
+using Models;
+using System.Diagnostics.Metrics;
 
-namespace ReadModel.ClassLibrary
+namespace ClassLibrary.Data
 {
-    internal class Data
+    public class Context : DbContext
     {
+        public DbSet<employee> employees { get; set; }
+
+        public Context(DbContextOptions<Context> options) : base(options)
+        {
+        }
     }
 }
